@@ -14,7 +14,7 @@
 
 void	ft_lstdelone_tstruct(t_struct **alst)
 {
-	(*alst)->s = NULL;
+	ft_strdel(&((*alst)->s));
 	(*alst)->fdesc = 0;
 	(*alst)->index = NULL;
 	free(*alst);

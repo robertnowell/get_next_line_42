@@ -18,7 +18,7 @@ t_struct	*ft_create_elem(char *content, int fd, char *endl_index)
 
 	if (!(list = (t_struct *)malloc(sizeof(t_struct))))
 		return (0);
-	list->s = content;
+	list->s = ft_strdup(content);
 	list->fdesc = fd;
 	list->index = endl_index;
 	list->next = NULL;

@@ -23,7 +23,7 @@ ft_lstdelone_tstruct.c
 
 OBJ = $(SRC:.c=.o)
 
-HEADER = libft.h
+HEADER = /includes/libft.h
 
 all: $(NAME)
 
